@@ -79,7 +79,7 @@ async def start(client, message):
         await client.send_message(
         chat_id=message.chat.id,
         reply_markup=reply_markup,
-            caption=script.START_TXT.format(message.from_user.mention, gtxt, temp.U_NAME, temp.B_NAME),
+            text=Translation.START_TXT.format(message.from_user.mention, gtxt, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -150,7 +150,7 @@ async def start(client, message):
         await client.send_message(
         chat_id=message.chat.id,
         reply_markup=reply_markup,
-            text=script.START_TXT.format(message.from_user.mention, gtxt, temp.U_NAME, temp.B_NAME),
+            text=Translation.START_TXT.format(message.from_user.mention, gtxt, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
